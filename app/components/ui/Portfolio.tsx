@@ -47,7 +47,7 @@ export const Portfolio: FC<PortfolioProps> = () => {
         </Space>
 
         <div className="">
-          <Tabs value="html">
+          <Tabs value="article">
             <TabsHeader {...commonProps}
               className="bg-transparent"
               indicatorProps={{
