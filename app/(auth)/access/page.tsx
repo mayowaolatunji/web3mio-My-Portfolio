@@ -42,7 +42,7 @@ const page = () => {
                 className=" !border-[#F7F7FC] border-2 focus:!border-[#10c8ff] w-[400px]"
                 labelProps={{
                   className: "before:content-none after:content-none",
-                }} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}            
+                }} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}  crossOrigin={undefined}           
               />
             </Space>
             <Button {...commonProps} className="bg-[#10c8ff] w-[400px] text-[#F7F7FC] hover:bg-transparent hover:text-[#10c8ff] hover:border-2 hover:border-[#10c8ff]" size="lg">
