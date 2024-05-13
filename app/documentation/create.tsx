@@ -6,9 +6,9 @@ import { Space } from "antd";
 
 const CreateDoc = () => {
   return (
-    <div className="flex w-full lg:w-[600px] items-start flex-col">
+    <div className="flex w-full lg:w-[500px] items-start flex-col">
           <Typography
-            className="text-[#10c8ff] text-[18px] lg:text-[24px]"  {...commonProps}>
+            className="text-[#fff] text-[18px] lg:text-[24px]"  {...commonProps}>
             Create New Documentation 
           </Typography>
 
@@ -21,7 +21,7 @@ const CreateDoc = () => {
               <Input
                 size="lg"
                 placeholder="Project name"
-                className=" !border-[#F7F7FC] border-2 focus:!border-[#10c8ff] w-[400px]"
+                className=" !border-[#F7F7FC] border-2 focus:!border-[#515175] w-[400px]"
                 labelProps={{
                   className: "before:content-none after:content-none",
                 }} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined}          />
@@ -34,7 +34,7 @@ const CreateDoc = () => {
               <Textarea
                 size="lg"
                 placeholder="Short Description"
-                className=" !border-[#F7F7FC] border-2 focus:!border-[#10c8ff] w-[400px]"
+                className=" !border-[#F7F7FC] border-2 focus:!border-[#515175] w-[400px]"
                 labelProps={{
                   className: "before:content-none after:content-none",
                 }} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}            
@@ -48,13 +48,13 @@ const CreateDoc = () => {
               <Textarea
                 size="lg"
                 placeholder="Description"
-                className=" !border-[#F7F7FC] border-2 focus:!border-[#10c8ff] w-[400px]"
+                className=" !border-[#F7F7FC] border-2 focus:!border-[#515175] w-[400px]"
                 labelProps={{
                   className: "before:content-none after:content-none",
                 }} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}          />
             </Space>
 
-            <Button {...commonProps} className="bg-[#10c8ff] w-[400px] text-[#F7F7FC] hover:bg-transparent hover:text-[#10c8ff] hover:border-2 hover:border-[#10c8ff]" size="lg">
+            <Button {...commonProps} className="bg-[#515175] w-[200px]" size="lg">
               Save
             </Button>
           </form>

@@ -11,7 +11,7 @@ const page = () => {
       <div className="flex flex-col-reverse lg:flex lg:flex-row items-start gap-10">
         <div className="flex w-full lg:w-[600px] items-start flex-col">
           <Typography
-            className="text-[#10c8ff] text-[18px] lg:text-[24px]"  {...commonProps}>
+            className="text-[#fff] text-[18px] lg:text-[24px]"  {...commonProps}>
             LOGIN
           </Typography>
 
@@ -25,7 +25,7 @@ const page = () => {
                 size="lg"
                 type="email"
                 placeholder="john@gmail.com"
-                className=" !border-[#F7F7FC] border-2 focus:!border-[#10c8ff] w-[400px]"
+                className=" !border-[#F7F7FC] border-2 focus:!border-[#515175] w-[400px]"
                 labelProps={{
                   className: "before:content-none after:content-none",
                 }} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} crossOrigin={undefined}          />
@@ -39,13 +39,13 @@ const page = () => {
                 size="lg"
                 type="password"
                 placeholder="******"
-                className=" !border-[#F7F7FC] border-2 focus:!border-[#10c8ff] w-[400px]"
+                className=" !border-[#F7F7FC] border-2 focus:!border-[#515175] w-[400px]"
                 labelProps={{
                   className: "before:content-none after:content-none",
                 }} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}  crossOrigin={undefined}           
               />
             </Space>
-            <Button {...commonProps} className="bg-[#10c8ff] w-[400px] text-[#F7F7FC] hover:bg-transparent hover:text-[#10c8ff] hover:border-2 hover:border-[#10c8ff]" size="lg">
+            <Button {...commonProps} variant="outlined" className="text-white border-white">
               SIGN IN
             </Button>
           </form>

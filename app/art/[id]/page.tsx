@@ -6,7 +6,7 @@ import { Typography } from "@material-tailwind/react";
 
 const page = () => {
   return (
-    <div className="mx-auto custom-container w-full">
+    <div className="mx-auto container w-full">
       <div className="p-7 lg:p-20">
         <div className="w-full rounded-bl-2xl rounded-br-2xl h-[600px] relative overflow-hidden flex flex-col items-center justify-center gap-6" style={{ backgroundImage: "url('/assets/inkon.jpeg')", backgroundSize: "cover", backgroundPosition: "center" }}>
           <Typography

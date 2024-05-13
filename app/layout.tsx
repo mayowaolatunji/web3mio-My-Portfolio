@@ -18,8 +18,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      {/* bg-[#32325D] */}
-      <body className={`${inter.className} bg-[#1D1B1B]`}>
+      {/* 32325D, 515175, E9ECEF, 3C3F43 */}
+      <body className={`${inter.className} bg-[#32325D] overflow-x-hidden`}>
         <Header />
         {children}
         <Footer />

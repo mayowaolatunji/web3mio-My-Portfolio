@@ -8,13 +8,13 @@ export interface AboutProps {}
 export const About: FC<AboutProps> = () => {
 
   return (
-    <div className="mx-auto custom-container w-full h-full lg:h-[750px] flex flex-col justify-center gap-10 items-center p-3 lg:py-10" id="about">
+    <div className="mx-auto container w-full h-full lg:h-[750px] flex flex-col justify-center gap-10 items-center p-3 lg:py-10" id="about">
         <Typography
-          className="text-[#10c8ff] text-[20px] lg:text-[32px]"  {...commonProps}>
+          className="text-[#fff] text-[20px] lg:text-[32px]"  {...commonProps}>
           ABOUT ME
         </Typography>
         <div className="flex flex-col lg:flex lg:flex-row items-start w-full h-full gap-10">
-          <div className="w-full lg:w-[500px] h-full border-2 border-[#10c8ff] shadow-lg">
+          <div className="w-full lg:w-[500px] h-full border-2 border-[#fff] shadow-lg">
             <img src="/assets/photo.png" className="w-full h-full object-cover" alt="Photo" />
           </div>
           <div className="w-full lg:w-[60%] flex items-start justify-start h-full flex-col gap-12">
@@ -40,7 +40,7 @@ export const About: FC<AboutProps> = () => {
                 Languages & Frameworks: Javascript, React, Solidity GraphQL, Python, REST, Github/Gitbook, Markdown.
               </Typography>
             </div>
-            <Button {...commonProps} className="bg-[#10c8ff] text-[#F7F7FC] hover:bg-transparent hover:text-[#10c8ff] hover:border-2 hover:border-[#10c8ff]" size="lg">
+            <Button {...commonProps} variant="outlined" className="text-white border-white">
               Contact Me
             </Button>
           </div>

@@ -11,3 +11,22 @@
 html {
     scroll-behavior: smooth;
 }
+
+.logo {
+    color: #FFF;
+    font-family: Lora;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-shadow: 2px 3px 1px rgb(83, 67, 141);
+}
+
+.logo_span {
+    color: #F00;
+    font-family: Lora;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}

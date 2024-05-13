@@ -169,14 +169,14 @@ export const Header: FC<HeaderProps> = () => {
     }, []);
    
     return (
-      <Navbar className={`mx-auto max-w-full px-10 py-3 border-none bg-[#1D1B1B] rounded-none shadow-lg ${
-        isSticky ? "fixed top-0 z-[10000]" : ""
+      <Navbar className={`mx-auto max-w-full px-10 py-3 border-none bg-[#32325D] rounded-none ${
+        isSticky ? "fixed top-0 z-[10000] shadow-lg" : ""
       }`}  {...commonProps}>
         <div className="flex items-center justify-between text-blue-gray-900">
             <Typography
-              className="mr-4 cursor-pointer py-1.5 text-[#10c8ff] text-[22px]"  {...commonProps}>
+              className="mr-4 cursor-pointer py-1.5 logo"  {...commonProps}>
               <Link href="/">
-                WEB3MIO
+                WEB<span className="logo_span">3</span>MIO
               </Link>
             </Typography>
             <div className="hidden lg:block">

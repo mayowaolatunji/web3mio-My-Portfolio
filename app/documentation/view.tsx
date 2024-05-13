@@ -5,12 +5,12 @@ import { Typography, Button, Card, CardHeader, CardBody } from "@material-tailwi
 
 const ViewDoc = () => {
   return (
-    <div className="flex w-full lg:w-[900px] items-start flex-col gap-10">
+    <div className="flex w-full lg:w-[600px] items-start flex-col gap-10">
         <Typography
-            className="text-[#10c8ff] text-[18px] lg:text-[24px]"  {...commonProps}>
+            className="text-[#fff] text-[18px] lg:text-[24px]"  {...commonProps}>
             All Documentation 
         </Typography>
-        <Card className="w-full max-w-[48rem] h-[650px] lg:h-[400px] bg-[#1D1B1B] shadow-xl flex flex-col lg:flex lg:flex-row" {...commonProps}>
+        <Card className="w-full max-w-[43rem] h-[650px] lg:h-[450px] bg-[#515175] shadow-xl flex flex-col lg:flex lg:flex-row" {...commonProps}>
             <CardHeader
                 shadow={false}
                 {...commonProps}
@@ -24,7 +24,7 @@ const ViewDoc = () => {
                 />
             </CardHeader>
             <CardBody {...commonProps}>
-                <Typography className="mb-2 text-[#10c8ff] text-[24px]" {...commonProps}>
+                <Typography className="mb-2 text-[#fff] text-[24px]" {...commonProps}>
                 Lyft launching cross-platform service this week
                 </Typography>
                 <Typography className="mb-8 font-normal text-[#F7F7FCB3] text-[18px]" {...commonProps}>
@@ -34,7 +34,7 @@ const ViewDoc = () => {
                 of the story
                 </Typography>
                 <a href="#" className="inline-block">
-                <Button className="border-2 border-[#10c8ff] text-[#10c8ff] bg-transparent hover:bg-[#10c8ff] hover:text-white" {...commonProps}>
+                <Button variant="outlined" {...commonProps} className="text-white border-white">
                     Read More
                 </Button>
                 </a>

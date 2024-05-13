@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link"
 import { FC } from "react";
 import { Typography } from "@material-tailwind/react";
 import { commonProps } from "@/app/types/common";
@@ -8,13 +9,13 @@ export interface FooterProps {}
 export const Footer: FC<FooterProps> = () => {
 
     return (
-        <footer className="w-full bg-[#19191b] p-8">
+        <footer className="w-full h-[450px] lg:h-full bg-[#32325D] p-8">
           <div className="flex flex-row flex-wrap items-center justify-center gap-y-6 gap-x-12 text-center md:justify-between">
-            <Typography
-                className="font-normal transition-colors text-[#F7F7FC] hover:text-blue-500 focus:text-blue-500"
-                {...commonProps}
-            >
-                WEB3MIO
+          <Typography
+              className="mr-4 cursor-pointer py-1.5 logo"  {...commonProps}>
+              <Link href="/">
+                WEB<span className="logo_span">3</span>MIO
+              </Link>
             </Typography>
             <ul className="flex flex-wrap items-center gap-y-2 gap-x-8">
               <li>
