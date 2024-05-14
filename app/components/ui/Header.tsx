@@ -184,9 +184,7 @@ export const Header: FC<HeaderProps> = () => {
               <NavList />
             </div>
             <div className="flex items-center justify-center gap-3"> 
-              {isUser && (
-                <ProfileMenu />
-              )}
+              <ProfileMenu />
               <IconButton
                 variant="text"
                 className="ml-auto h-6 w-6 text-[#F7F7FC] hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"

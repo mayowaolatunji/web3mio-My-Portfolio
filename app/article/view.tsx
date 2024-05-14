@@ -50,7 +50,7 @@ const ViewDoc: FC<ViewDocProps> = ({ articles }) => {
                             {article.short_desc}
                         </Typography>
                         <div className="flex gap-5">
-                            <Link href={`/art/${article.id}`} className="inline-block">
+                            <Link href={`/art/${article.id}`} as={`/art/${article.id}`} className="inline-block">
                                 <Button variant="outlined" {...commonProps} className="text-white border-white">
                                     View
                                 </Button>

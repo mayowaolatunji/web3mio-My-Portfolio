@@ -49,13 +49,13 @@ const ViewDoc: FC<ViewDocProps> = ({ docs }) =>{
                             {doc.short_desc}
                         </Typography>
                         <div className="flex gap-5">
-                            <Link href={`/doc/${doc.id}`} className="inline-block">
+                            <Link href={`/doc/${doc.id}`} as={`/doc/${doc.id}`} className="inline-block">
                                 <Button variant="outlined" {...commonProps} className="text-white border-white">
                                     View
                                 </Button>
                             </Link>
                             <form onSubmit={handleSave}>
-                                <input hidden value={doc.id} name="inputId"/>
+                                <input hidden value={doc.id}  name="inputId"/>
                                 <Button {...commonProps} className="bg-red-500" type="submit">
                                     Delete
                                 </Button>
