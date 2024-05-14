@@ -81,7 +81,7 @@ export const Hero: FC<HeroProps> = () => {
           </div>
         </div>
         <div className="w-full lg:w-[550px]  relative">
-          <div className="absolute z-[-10] top-[170px] left-[-40px] hidden lg:block">
+          {/* <div className="absolute z-[-10] top-[170px] left-[-40px] hidden lg:block">
             <svg width="325" height="750" viewBox="0 0 462 977" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M289.065 484.49L0.792554 69.9892L209.058 0.902126L461.055 393.617L289.065 484.49Z" stroke="#fff"/>
             </svg>
@@ -90,7 +90,7 @@ export const Hero: FC<HeroProps> = () => {
             <svg width="320" height="750" viewBox="0 0 379 480" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M0.770121 459.146L213.26 1.15021L377.968 146.129L165.991 561.812L0.770121 459.146Z" stroke="#fff"/>
             </svg>
-          </div>
+          </div> */}
           {showAltImage ? (
             <img src="/assets/photo.png" className="w-full h-full object-cover z-100" alt="Photo" />
           ) : (
