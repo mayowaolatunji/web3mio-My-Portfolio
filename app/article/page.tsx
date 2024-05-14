@@ -1,21 +1,29 @@
-"use client";
-
-import { commonProps } from "@/app/types/common";
-import { Typography } from "@material-tailwind/react";
+import { prisma } from "@/utils/prisma";
+import { TTypography } from "../components/base/Typography";
 import CreateDoc from "./create";
 import ViewDoc from "./view";
 
-const page = () => {
+const page = async () => {
+  const articles = await prisma.article.findMany({
+    select: {
+      name: true,
+      id: true,
+      description: true,
+      short_desc: true,
+      imageUrl: true,
+    },
+    orderBy: {
+      createdAt: "desc",
+    },
+  });
+
   return (
     <div className="min-h-screen gap-5 lg:gap-10 flex flex-col w-full mx-auto container items-center justify-start p-5 lg:p-20">
-      <Typography
-        className="text-[#F7F7FC] text-[21px] lg:text-[32px]"  {...commonProps}>
-        Article
-      </Typography>
+      <TTypography label="Article"/>
 
       <div className="flex flex-col-reverse lg:flex lg:flex-row items-start gap-5">
         <CreateDoc />
-        <ViewDoc />
+        <ViewDoc articles={articles}/>
       </div>
     </div>
   )

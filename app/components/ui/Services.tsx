@@ -7,7 +7,7 @@ import {
   Typography,
   Carousel
 } from "@material-tailwind/react";
-import { commonProps } from "@/app/types/common";
+import { commonProps } from "@/types/common";
 
 export interface ServicesProps {}
 export const Services: FC<ServicesProps> = () => {

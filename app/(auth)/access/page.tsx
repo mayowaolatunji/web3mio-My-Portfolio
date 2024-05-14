@@ -1,6 +1,6 @@
 "use client";
 
-import { commonProps } from "@/app/types/common";
+import { commonProps } from "@/types/common";
 import { Typography, Button, Input } from "@material-tailwind/react";
 import { Space } from "antd";
 import { MailOutlined, LockOutlined } from "@ant-design/icons"

@@ -2,7 +2,7 @@
 
 import { Typography, Button } from "@material-tailwind/react";
 import { FC } from "react";
-import { commonProps } from "@/app/types/common";
+import { commonProps } from "@/types/common";
 
 export interface AboutProps {}
 export const About: FC<AboutProps> = () => {

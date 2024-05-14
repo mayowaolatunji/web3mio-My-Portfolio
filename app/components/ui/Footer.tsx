@@ -3,7 +3,7 @@
 import Link from "next/link"
 import { FC } from "react";
 import { Typography } from "@material-tailwind/react";
-import { commonProps } from "@/app/types/common";
+import { commonProps } from "@/types/common";
 
 export interface FooterProps {}
 export const Footer: FC<FooterProps> = () => {

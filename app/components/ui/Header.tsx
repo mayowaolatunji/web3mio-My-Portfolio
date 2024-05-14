@@ -18,7 +18,7 @@ import {
   ChevronDownIcon,
 } from "@heroicons/react/24/solid";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import { commonProps } from '../../types/common';
+import { commonProps } from '../../../types/common';
 
 const links = [
   {

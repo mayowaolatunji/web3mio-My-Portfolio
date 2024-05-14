@@ -2,7 +2,7 @@
 
 import { Typography, Button, Tooltip } from "@material-tailwind/react";
 import { FC, useState, useEffect } from "react";
-import { commonProps } from "@/app/types/common";
+import { commonProps } from "@/types/common";
 import { Space } from "antd";
 
 export interface HeroProps {}
