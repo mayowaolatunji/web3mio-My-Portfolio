@@ -140,7 +140,7 @@ export interface HeaderProps {}
 export const Header: FC<HeaderProps> = () => {
     const [openNav, setOpenNav] = useState(false);
     const [isSticky, setIsSticky] = useState(false);
-    isUser = false;
+    const isUser = false;
 
     useEffect(() => {
       const handleScroll = () => {
