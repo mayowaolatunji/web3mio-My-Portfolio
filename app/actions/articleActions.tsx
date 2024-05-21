@@ -30,3 +30,17 @@ export async function deleteArticle(inputId: string) {
   
     revalidatePath("/article")
   }
+
+export async function getArticleById(id: string) {
+  try {
+      const article = await prisma.article.findUnique({
+          where: {
+              id: id
+          }
+      });
+      return article;
+  } catch (error) {
+      console.error("Error fetching article by ID:", error);
+      return null;
+  }
+}  

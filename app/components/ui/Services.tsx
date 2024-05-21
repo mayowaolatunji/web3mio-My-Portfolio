@@ -23,7 +23,7 @@ export const Services: FC<ServicesProps> = () => {
       </div>
       <div className="hidden flex-col lg:flex lg:flex-row items-center mt-[50px] p-5 lg:p-0 justify-center gap-20">
         <Carousel 
-          transition={{ duration: 2 }} 
+          transition={{ duration: 2, delay: 2 }} 
           autoplay
           loop
           {...commonProps}

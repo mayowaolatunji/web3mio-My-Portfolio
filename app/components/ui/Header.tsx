@@ -182,9 +182,10 @@ export const Header: FC<HeaderProps> = () => {
             </Typography>
             <div className="hidden lg:block">
               <NavList />
+              { isUser && (
+                <ProfileMenu />
+              ) }
             </div>
-            <div className="flex items-center justify-center gap-3"> 
-              <ProfileMenu />
               <IconButton
                 variant="text"
                 className="ml-auto h-6 w-6 text-[#F7F7FC] hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
@@ -196,7 +197,6 @@ export const Header: FC<HeaderProps> = () => {
                   <Bars3Icon className="h-6 w-6" strokeWidth={2} />
                 )}
               </IconButton>
-            </div>
         </div>
         <Collapse open={openNav}>
           <NavList />

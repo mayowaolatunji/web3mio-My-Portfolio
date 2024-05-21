@@ -72,10 +72,10 @@ export const Portfolio: FC<PortfolioProps> = ({ articles, docs }) => {
                   { value === "tutorial" && (
                     <div className="flex flex-col p-10 items-center justify-center w-full max-w-[48rem] h-[650px] lg:h-[400px] shadow-xl">
                       <Typography className="mb-4 text-[#fff] text-[24px] text-center lg:text-left" {...commonProps}>
-                        Welcome to our tutorial section!
+                        Most tutorials are ghostwriting efforts. Please request privately.
                       </Typography>
                       <Button {...commonProps} variant="outlined" className="text-white border-white">
-                        Start Learning
+                        send request
                       </Button>
                     </div>
                   )}

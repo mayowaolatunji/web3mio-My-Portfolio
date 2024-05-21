@@ -14,7 +14,7 @@ export async function createDocs(formData: Types ) {
         console.log(error)
     }
 
-    revalidatePath("/");
+    revalidatePath("/documentation");
 }
 
 export async function deleteDocs(inputId: string) {
@@ -28,5 +28,19 @@ export async function deleteDocs(inputId: string) {
       console.log(error)
   }
   
-    revalidatePath("/article")
+    revalidatePath("/documentation")
+}
+
+export async function getDocumentationById(id: string) {
+  try {
+      const article = await prisma.documentation.findUnique({
+          where: {
+              id: id
+          }
+      });
+      return article;
+  } catch (error) {
+      console.error("Error fetching documentation by ID:", error);
+      return null;
   }
+}  
