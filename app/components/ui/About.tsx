@@ -41,7 +41,9 @@ export const About: FC<AboutProps> = () => {
                  Technologies & Tools: web3.JS, Rust, Rust, Solidity, Foundry, Slither, LaTeX, GraphQL, Markdown, REST, Postman, Swagger, MadCap Flare, Github/Gitbook, CMS, Figma, Notion.
 
               </Typography>
-            </div>
+            </div onClick={() => {
+                window.location.href = "mailto:mayowaweb3writer@gmail.com";
+              }}>
             <Button {...commonProps} variant="outlined" className="text-white border-white">
               Contact Me
             </Button>
