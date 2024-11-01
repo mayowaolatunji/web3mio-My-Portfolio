@@ -42,7 +42,7 @@ export const Hero: FC<HeroProps> = () => {
           </Typography>
           <Typography
               className="text-[#F7F7FCB3] font-normal text-[16px] lg:text-[24px] w-full"  {...commonProps}>
-          But Mayowa Olatunji help you create INTUITIVE & EFFICIENT Technical content/Docs that gets your web3 audience addititive to your products. 
+         But Mayowa Olatunji will create INTUITIVE & EFFICIENT Technical content/Docs that seamlessly onboard and glue web3 natives to your products.  
           </Typography>
           <Space size={15} className="mt-4">
             <Button 
